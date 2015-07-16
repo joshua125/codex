@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_pumpkin" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_weight="0.53"
+        android:src="@drawable/cropmustard" />
+
+    <TextView
+        android:id="@+id/splashTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.18"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:text="Aianthousphere Inc." />
+
+</LinearLayout>

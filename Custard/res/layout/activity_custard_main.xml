@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_silver"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.custard.CustardMainActivity" >
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="44dp"
+        android:layout_marginTop="112dp"
+        android:background="@drawable/button_selector"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="button 1"
+        android:textColor="#fff" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignBaseline="@+id/button3"
+        android:layout_alignBottom="@+id/button3"
+        android:layout_alignLeft="@+id/button1"
+        android:background="@drawable/button_selector"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="button 4"
+        android:textColor="#fff" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/button2"
+        android:layout_marginLeft="34dp"
+        android:layout_marginTop="92dp"
+        android:background="@drawable/button_selector"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="button 1"
+        android:textColor="#fff" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignBaseline="@+id/button1"
+        android:layout_alignBottom="@+id/button1"
+        android:layout_alignLeft="@+id/button3"
+        android:background="@drawable/button_selector"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="button 2"
+        android:textColor="#fff" />
+
+</RelativeLayout>

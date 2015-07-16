@@ -1,0 +1,14 @@
+<!--  in this xml file we will be creating a fadein animation
+there is a fadout file to accompany it. There are four properties we must use
+1. Type of Interpolator(tells the animation how to progress i.e speed
+2. Set the time duration in milliseconds
+3. set the start alpha value which should be in reverse of fadin
+4. start the end alpha value-->
+
+
+<alpha xmlns:android="http://schemas.android.com/apk/res/android"
+    android:interpolator="@android:anim/decelerate_interpolator" 
+    android:duration="500"
+    android:fromAlpha="1.0"
+    android:toAlpha="0.0"
+    />
