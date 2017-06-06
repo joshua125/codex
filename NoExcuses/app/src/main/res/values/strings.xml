@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">NoExcuses</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="question_text">Constantinople is the Largest City</string>
+    <string name="true_button">True</string>
+    <string name="false_button">False</string>
+    <string name="toast_correct">Correct!</string>
+    <string name="toast_incorrect">InCorrect!</string>
+    <string name="next_button">Next!</string>
+
+    <!-- Questions -->
+    <string name="question_oceans"> The Pacific OCean is larger than the Atlantic Ocean</string>
+    <string name="question_mideast">The Suez Canal connects the Red Seas and the Indian Ocean</string>
+    <string name="question_africa"> The Source of the Nile River is in Egypt</string>
+    <string name="question_americas">The Amazon River is the longest river in the Americas</string>
+    <string name="question_asia"> Lake Baikal is the world\'s oldest freshwater lake</string>
+
+    <!-- Answers Activity String Resources -->
+    <string name="warning_text">Are you sure you want to do this?</string>
+    <string name="show_answer_button">Show Answer</string>
+    <string name="cheat_button">Cheat!</string>
+    <string name="judgement_toast">cheating is wrong</string>
+
+
+    <string name="action_settings">Settings</string>
+</resources>

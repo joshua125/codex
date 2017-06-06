@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">CriminalIntent</string>
+    <string name="crime_hint_title">Enter Infraction</string>
+    <string name="crime_title_label">Title</string>
+    <string name="crome_detail_label">Details</string>
+    <string name="crime_solved_label">Solved!</string>
+    <string name="title_activity_crime_list">CrimeListActivity</string>
+    <string name="action_settings">Settings</string>
+</resources>
