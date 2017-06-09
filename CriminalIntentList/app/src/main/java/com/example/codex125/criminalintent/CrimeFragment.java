@@ -14,9 +14,16 @@ import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import java.util.UUID;
+
 import models.Crime;
+import models.CrimeLab;
+
+import static models.CrimeLab.get;
 
 public class CrimeFragment extends Fragment {
+
+    private static final String ARG_CRIME_ID = "crime_ud";
 
     private Crime mCrime;
     private EditText mTitleField;
@@ -25,10 +32,22 @@ public class CrimeFragment extends Fragment {
     private Button mDateButton;
     private CheckBox mSolvedCheckBox;
 
+    public static CrimeFragment newInstance(UUID crimeId){
+        Bundle args = new Bundle();
+        args.putSerializable(ARG_CRIME_ID, crimeId);
+        //passing data via fragment arguments between crimeFragment and CrimeActvity
+        CrimeFragment fragment = new CrimeFragment();
+        fragment.setArguments(args);
+        return fragment;
+    }
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        mCrime = new Crime();
+        //mCrime = new Crime();
+        UUID crimeId = (UUID) getArguments().getSerializable(ARG_CRIME_ID);
+
+        mCrime = CrimeLab.get(getActivity()).getCrime(crimeId);
     }
 
     @Override
